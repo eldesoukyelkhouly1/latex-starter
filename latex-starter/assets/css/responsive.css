@@ -1,0 +1,26 @@
+/* ---------- نقاط الانكسار: تنسيقات الشاشات المختلفة (الموبايل والتابلت) ---------- */
+
+@media (min-width: 640px) {
+  .container { padding-inline: 1.5rem; }
+  .card { padding: 1.5rem; }
+  .grid2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pkg-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fonts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .seg-grid.cols3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .seg-grid.cols2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .header-inner { padding-block: 2rem; }
+}
+
+@media (min-width: 1024px) {
+  .container { padding-inline: 2rem; }
+  .main-area { padding-block: 2rem; }
+  .workspace {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    align-items: start;
+    gap: 2rem;
+  }
+  .output-col {
+    position: sticky; top: 1rem;
+    max-height: calc(100dvh - 2rem);
+  }
+}
